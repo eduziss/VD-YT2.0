@@ -1,0 +1,2 @@
+npm run dev (START FRONT)
+ python -m uvicorn main:app --reload (START BACK)
