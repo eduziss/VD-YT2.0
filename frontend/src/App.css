@@ -1,71 +1,133 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  background: #f5f7fa;
 }
 
 .container {
-  text-align: center;
+  width: 100%;
 }
 
+/* HEADER */
 .topbar {
-  background: white;
-  padding: 15px;
-  border-bottom: 1px solid #ddd;
+  background: #3a7ca5;
+  padding: 15px 30px;
+  color: white;
 }
 
 .logo {
-  margin: 0;
-  color: #e60023;
-}
-
-.card {
-  background: white;
-  width: 600px;
-  margin: 60px auto;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.card h1 {
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #555;
-}
-
-.search-box {
   display: flex;
-  margin-top: 25px;
-}
-
-.search-box input {
-  flex: 1;
-  padding: 15px;
-  border: 2px solid #e60023;
-  border-right: none;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-}
-
-.search-box button {
-  background: #e60023;
-  color: white;
-  border: none;
-  padding: 0 25px;
-  cursor: pointer;
-  border-radius: 0 5px 5px 0;
+  align-items: center;
+  gap: 8px;
   font-weight: bold;
 }
 
-.search-box button:hover {
-  background: #c4001d;
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: white;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+}
+
+.search-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box input {
+  width: 400px;
+  padding: 12px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border: none;
+  background: #3a7ca5;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.alert {
+  display: block;
+  margin-top: 10px;
+  color: gray;
 }
 
 .status {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 14px;
-  color: #333;
+}
+
+/* INFO */
+.info {
+  display: flex;
+  padding: 40px;
+  gap: 30px;
+  background: #eef3f7;
+}
+
+.info img {
+  width: 300px;
+}
+
+.info-right {
+  max-width: 500px;
+}
+
+/* FAQ */
+.faq {
+  padding: 40px;
+  background: white;
+}
+
+.faq h3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.faq-item {
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #3a7ca5;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.footer a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 10px;
+  font-size: 12px;
 }
